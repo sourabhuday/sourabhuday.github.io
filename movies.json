@@ -1,0 +1,12 @@
+{
+  "upcoming": [
+    { "title": "Example Upcoming Film", "year": 2026, "note": "Why I'm looking forward to it." }
+  ],
+  "watchlist": [
+    { "title": "Example Film To Watch", "year": 2024, "note": "Recommended by a friend." },
+    { "title": "Another One On The List", "year": 2022, "note": "" }
+  ],
+  "watched": [
+    { "title": "Example Watched Film", "year": 2023, "rating": "8/10", "note": "Short note / what I thought." }
+  ]
+}

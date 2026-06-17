@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "title": "Movie Notes",
+      "date": "Ongoing",
+      "excerpt": "A living log of upcoming films, my watchlist, and notes on what I've watched.",
+      "url": "movies.html"
+    },
+    {
       "title": "Books from Around the World",
       "date": "June 2026",
       "excerpt": "An A–Z reading list: one book for every letter, by an author from a country whose name starts with it.",

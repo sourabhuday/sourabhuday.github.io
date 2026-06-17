@@ -618,6 +618,64 @@ strong {
   color: var(--text-secondary);
 }
 
+/* Movie notes (blog post) */
+.movie-list {
+  margin: 0.25rem 0 0.5rem;
+}
+
+.movie-item {
+  padding: 0.7rem 0;
+  border-bottom: 1px solid var(--border-color);
+  padding-left: 0.9rem;
+  border-left: 2px solid rgba(74, 116, 185, 0.2);
+  margin-bottom: 0.2rem;
+  transition: border-left-color var(--transition-time) ease;
+}
+
+.movie-item:hover {
+  border-left-color: var(--accent-color);
+}
+
+.movie-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.movie-title {
+  font-weight: 500;
+  font-size: 1.02rem;
+}
+
+.movie-year {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+}
+
+.movie-rating {
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: #fff;
+  background-color: var(--accent-color);
+  padding: 0.1rem 0.5rem;
+  border-radius: 999px;
+  margin-left: auto;
+}
+
+.movie-note {
+  margin: 0.3rem 0 0;
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+}
+
+.movie-empty {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  font-style: italic;
+  margin: 0.25rem 0 0.5rem;
+}
+
 /* Resume */
 .resume-section-title {
   font-size: 1.1rem;
