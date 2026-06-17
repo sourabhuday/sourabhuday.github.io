@@ -1,16 +1,10 @@
 {
   "posts": [
     {
-      "title": "Hello, world",
+      "title": "Books from Around the World",
       "date": "June 2026",
-      "excerpt": "A short intro to this blog. Replace this with your first real post. The optional \"url\" can point to a Markdown render, a Medium/Substack link, or another page.",
-      "url": ""
-    },
-    {
-      "title": "Notes on GPU kernels",
-      "date": "May 2026",
-      "excerpt": "An example post with an external link.",
-      "url": "https://github.com/sourabhuday"
+      "excerpt": "An A–Z reading list: one book for every letter, by an author from a country whose name starts with it.",
+      "url": "books-from-around-the-world.html"
     }
   ]
 }

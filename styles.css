@@ -563,6 +563,61 @@ strong {
   margin: 0;
 }
 
+/* Books from around the world (blog post) */
+.post-back {
+  font-size: 0.9rem;
+  margin: 0.25rem 0 0.5rem;
+}
+
+.books-list {
+  margin-top: 1.5rem;
+}
+
+.book-entry {
+  display: flex;
+  gap: 1.1rem;
+  align-items: baseline;
+  padding: 0.9rem 0;
+  border-bottom: 1px solid var(--border-color);
+  transition: transform var(--transition-time) ease;
+}
+
+.book-entry:hover {
+  transform: translateX(var(--animation-offset));
+}
+
+.book-letter {
+  flex: 0 0 2.2rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--accent-color);
+  line-height: 1;
+  text-align: center;
+}
+
+.book-body {
+  flex: 1;
+}
+
+.book-country {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-secondary);
+  margin-bottom: 0.15rem;
+}
+
+.book-title-line {
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+
+.book-note {
+  margin: 0.3rem 0 0;
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+}
+
 /* Resume */
 .resume-section-title {
   font-size: 1.1rem;
@@ -672,7 +727,7 @@ code {
   .publication-item:hover, .award-item:hover, 
   .service-category:hover, .misc-item:hover, .news-list li:hover,
   nav a:hover, .social-links-header a:hover, .pub-links a:hover,
-  .blog-post:hover {
+  .blog-post:hover, .book-entry:hover {
     transform: none !important;
   }
 
