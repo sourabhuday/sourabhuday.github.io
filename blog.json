@@ -1,0 +1,16 @@
+{
+  "posts": [
+    {
+      "title": "Hello, world",
+      "date": "June 2026",
+      "excerpt": "A short intro to this blog. Replace this with your first real post. The optional \"url\" can point to a Markdown render, a Medium/Substack link, or another page.",
+      "url": ""
+    },
+    {
+      "title": "Notes on GPU kernels",
+      "date": "May 2026",
+      "excerpt": "An example post with an external link.",
+      "url": "https://github.com/sourabhuday"
+    }
+  ]
+}

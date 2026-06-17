@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Academic Homepage">
-    <meta name="keywords" content="Computer Science, PhD Student, Research, Machine Learning, Robotics">
-    <meta name="author" content="Anonymous">
-    <meta property="og:title" content="Academic Homepage - PhD Student">
-    <meta property="og:description" content="Research in computer science and related fields.">
+    <meta name="description" content="Sourabh Betigeri — personal homepage: photography, blog, and resume.">
+    <meta name="keywords" content="Sourabh Betigeri, GPU, Machine Learning, Systems, Photography">
+    <meta name="author" content="Sourabh Betigeri">
+    <meta property="og:title" content="Sourabh Betigeri">
+    <meta property="og:description" content="Photography, writing, and more.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="#">
+    <meta property="og:url" content="https://sourabhuday.github.io/">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:creator" content="@anonymous">
-    <title>Academic Homepage</title>
+    <title>Sourabh Betigeri</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;500;600&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
@@ -21,69 +21,117 @@
     <header>
         <div class="header-content">
             <h1>Sourabh Betigeri</h1>
-            <p> .. </p>
+            <p class="subtitle">sourabh <span class="at">at</span> example <span class="at">dot</span> com</p>
             <div class="social-links-header">
-                <a href="#"><i class="fas fa-graduation-cap"></i>Google Scholar</a>
-                <a href="#"><i class="fab fa-twitter"></i>Twitter</a>
-                <a href="#"><i class="fab fa-github"></i>GitHub</a>
-                <a href="mailto:email@university.edu"><i class="fas fa-envelope"></i>Email</a>
+                <a href="https://scholar.google.com/" target="_blank" rel="noopener"><i class="fas fa-graduation-cap"></i>Scholar</a>
+                <a href="https://github.com/sourabhuday" target="_blank" rel="noopener"><i class="fab fa-github"></i>GitHub</a>
+                <a href="https://twitter.com/" target="_blank" rel="noopener"><i class="fab fa-twitter"></i>Twitter</a>
+                <a href="https://www.linkedin.com/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i>LinkedIn</a>
+                <a href="mailto:sourabh@example.com"><i class="fas fa-envelope"></i>Email</a>
             </div>
         </div>
         <div class="header-image">
-            <img src="images/profile.jpg" alt="Profile Photo">
+            <img src="images/profile.jpg" alt="Sourabh Betigeri" onerror="this.style.display='none'">
         </div>
     </header>
 
+    <nav>
+        <ul>
+            <li><a href="#about" class="nav-link active" data-tab="about">About</a></li>
+            <li><a href="#photography" class="nav-link" data-tab="photography">Photography</a></li>
+            <li><a href="#blog" class="nav-link" data-tab="blog">Blog</a></li>
+            <li><a href="#resume" class="nav-link" data-tab="resume">Resume</a></li>
+        </ul>
+    </nav>
+
     <main>
-        <section id="about">
-            <p>Hi!</p>
-        </section>
+        <!-- ABOUT -->
+        <section id="about" class="tab-panel active">
+            <p>Hi! I'm Sourabh. I work on <strong>GPU systems and machine learning</strong>. I'm
+            interested in making models faster and more efficient, and in the messy details
+            of how hardware and software meet.</p>
+            <p>Edit this paragraph in <code>index.html</code> to introduce yourself, your interests,
+            and what you're currently up to.</p>
 
-        <section id="research">
-            <h2>Research</h2>
-            <p>My research focuses on <strong>[Research Area 1] and [Research Area 2]</strong>. My recent works explore:</p>
-            <ul>
-                <li>[Research Topic 1] (<a href="#">[Conference 1]'24</a>, <a href="#">[Conference 2]'23</a>, <a href="#">[Conference 3]'22</a>)</li>
-            </ul>
-        </section>
-
-        <section id="news">
-            <h2>News</h2>
+            <h2>Updates</h2>
             <div class="news-container">
                 <ul class="news-list">
-                    <li>[MM/YYYY]: [News Item 1]</li>
+                    <li><strong>Jun 2026:</strong> Refreshed my personal site.</li>
+                    <li><strong>MM/YYYY:</strong> Add an update here.</li>
                 </ul>
             </div>
         </section>
 
-        <section id="publications">
+        <!-- PHOTOGRAPHY -->
+        <section id="photography" class="tab-panel">
+            <h2>Photography</h2>
+            <p>A few photos I've taken. Drop your images in <code>images/photos/</code> and list
+            them in <code>photos.json</code>.</p>
+            <div id="photo-grid" class="photo-grid">
+                <!-- Photos loaded dynamically from photos.json -->
+            </div>
+        </section>
+
+        <!-- BLOG -->
+        <section id="blog" class="tab-panel">
+            <h2>Blog</h2>
+            <p>Notes and writing. Add posts in <code>blog.json</code>.</p>
+            <div id="blog-list" class="blog-list">
+                <!-- Blog posts loaded dynamically from blog.json -->
+            </div>
+        </section>
+
+        <!-- RESUME -->
+        <section id="resume" class="tab-panel">
             <div class="publications-header">
-                <h2 id="toggle-header">Selected Publications</h2>
-                <button id="toggle-publications" class="toggle-publications">Show All</button>
+                <h2>Resume</h2>
+                <a class="toggle-publications" href="files/resume.pdf" target="_blank" rel="noopener">
+                    <i class="fas fa-file-pdf"></i>&nbsp;Download PDF
+                </a>
             </div>
-            <div id="publications-container">
-                <!-- Publications will be dynamically loaded here -->
-            </div>
-        </section>
 
+            <h3 class="resume-section-title">Education</h3>
+            <div class="resume-item">
+                <div class="resume-row">
+                    <span class="resume-role">B.S. in Computer Science</span>
+                    <span class="resume-date">20XX – 20XX</span>
+                </div>
+                <div class="resume-org">University Name</div>
+                <p class="resume-desc">Relevant coursework, honors, or a one-line description.</p>
             </div>
-        </section>
 
-        <section id="miscellaneous">
-            <h2>Miscellaneous</h2>
-            <div class="misc-item">
-                <p>[Optional] Share your hobbies and interests here.</p>
+            <h3 class="resume-section-title">Experience</h3>
+            <div class="resume-item">
+                <div class="resume-row">
+                    <span class="resume-role">Role / Title</span>
+                    <span class="resume-date">Mon 20XX – Present</span>
+                </div>
+                <div class="resume-org">Company / Lab</div>
+                <ul class="resume-bullets">
+                    <li>What you built or researched, and the impact.</li>
+                    <li>Another notable contribution.</li>
+                </ul>
+            </div>
+
+            <h3 class="resume-section-title">Skills</h3>
+            <div class="resume-skills">
+                <span class="skill-tag">CUDA</span>
+                <span class="skill-tag">PyTorch</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">C++</span>
+                <span class="skill-tag">Triton</span>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>Last updated: [Month YYYY] </p>
+        <p>Last updated: June 2026</p>
     </footer>
 
     <div id="imageModal" class="modal">
         <span class="modal-close" onclick="closeModal()">&times;</span>
         <img class="modal-content" id="modalImage">
+        <div id="modalCaption" class="modal-caption"></div>
     </div>
     <script src="scripts.js"></script>
 </body>

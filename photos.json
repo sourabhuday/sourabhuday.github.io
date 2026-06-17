@@ -1,0 +1,19 @@
+{
+  "photos": [
+    {
+      "src": "images/photos/1.jpg",
+      "thumb": "images/photos/1.jpg",
+      "caption": "Add a caption (optional)"
+    },
+    {
+      "src": "images/photos/2.jpg",
+      "thumb": "images/photos/2.jpg",
+      "caption": ""
+    },
+    {
+      "src": "images/photos/3.jpg",
+      "thumb": "images/photos/3.jpg",
+      "caption": ""
+    }
+  ]
+}
