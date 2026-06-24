@@ -1,6 +1,6 @@
 # sourabhuday.github.io
 
-Personal homepage with **About**, **Photography**, **Blog**, and **Resume**
+Personal homepage with **About**, **Photography**, and **Blog**
 sections. Plain HTML/CSS/JS — no build step. Hosted with GitHub Pages.
 
 ## Editing content
@@ -9,11 +9,10 @@ All content lives in a few easy-to-edit files:
 
 | What | Where |
 | --- | --- |
-| Name, bio, updates, nav, resume entries | `index.html` |
+| Name, bio, updates, nav | `index.html` |
 | Photography | `photos.json` (images in `images/photos/`) |
 | Blog posts | `blog.json` |
 | Profile photo | `images/profile.jpg` |
-| Resume PDF | `files/resume.pdf` |
 | Styling/colors | `styles.css` (`:root` variables at the top) |
 
 ### Add a photo
